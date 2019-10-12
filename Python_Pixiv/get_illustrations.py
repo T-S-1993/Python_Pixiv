@@ -59,7 +59,7 @@ for i, work_info in enumerate(works_info.response):
 	print("Title: %s" % work_title)
 	print(separator)
 
-	# '/'はPathとして扱われるため回避
+	# ファイル名に適した形にリネーム
 	# rename the file 
 	work_title = re.sub("[: | \? | . | \" | < | > | \ | /]","",work_title)
 	
